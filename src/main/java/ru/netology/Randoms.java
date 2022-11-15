@@ -4,8 +4,9 @@ import java.util.Iterator;
 import java.util.Random;
 
 public class Randoms implements Iterable<Integer> {
-    protected Random random;
-    protected final int min, max;
+    private Random random;
+    private final int min;
+    private final int max;
 
     public Randoms(int min, int max) {
         if (min > max) {
